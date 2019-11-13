@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(path = "/test")
 public class HelloController {
 
+    /**
     @RequestMapping(path = "/hello")
     public String sayHello(){
         System.out.println("Hello this is my first springmvc project");
         return "success";
-    }
+    }*/
 
     @RequestMapping(value = "/testRequestMapping" , method = {RequestMethod.POST},params = {"username=zcl"})
     public String testRequestMapping(){
